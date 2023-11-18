@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/commonIntent" android:title="@string/common_intents"/>
+<item android:id="@+id/simpleCalculator" android:title="@string/simple_calculator"/>
+<item android:id="@+id/donationactivity" android:title="@string/donation_time"/>
+</menu>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق التطوع</string>
+    <string name="title">تطبيق التطوع</string>
+    <string name="enter_the_first_number">ادخل الرقم الأول</string>
+    <string name="enter_the_second_number">ادخل الرقم الثاني</string>
+    <string name="error_msg">"خطأ بالإدخال "</string>
+    <string name="hello">مرحبا</string>
+    <string name="erro_input">يجب إدخال كل الحقول</string>
+    <string name="landscape_welcomemsg">شكرا لتبرعك</string>
+    <string name="common_intents">حالات شائعة</string>
+    <string name="simple_calculator">الألة الحاسبة</string>
+    <string name="all_donations">"كل التبرعات "</string>
+    <string name="donation_time">وقت التبرع</string>
+    <string name="any_dollar_mater">لكل قرش تأثير </string>
+    <string name="please_enter_the_donation_amount_here">أدخل مبلغ التبرع</string>
+</resources>

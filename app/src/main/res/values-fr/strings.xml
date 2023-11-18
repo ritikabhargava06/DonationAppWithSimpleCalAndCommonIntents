@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Donation App</string>
+    <string name="title">My First Calcuator</string>
+    <string name="enter_the_first_number">enter the first number</string>
+    <string name="enter_the_second_number">enter the second number</string>
+    <string name="error_msg">One or both Numbers are empty</string>
+    <string name="hello">Hello</string>
+    <string name="erro_input">All fields should be filled</string>
+    <string name="landscape_welcomemsg">any dollar mater thanks for using our app</string>
+    <string name="common_intents">Common Intents</string>
+    <string name="simple_calculator">Simple Calculator</string>
+    <string name="all_donations">All Donations</string>
+    <string name="donation_time">Donation Time</string>
+    <string name="any_dollar_mater">Any Dollar Mater</string>
+    <string name="please_enter_the_donation_amount_here">Enter Donation Amount</string>
+
+</resources>

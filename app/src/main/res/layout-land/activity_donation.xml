@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonationActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/any_dollar_mater"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/image"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:layout_constraintBottom_toTopOf="@id/donate_button"
+        >
+        <RadioButton
+            android:id="@+id/paypal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="PayPal"
+            android:layout_gravity="center"
+            />
+
+        <RadioButton
+            android:id="@+id/creditCard"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Credit Card"
+            android:layout_gravity="center"
+
+            />
+
+    </RadioGroup>
+    <EditText
+        android:id="@+id/donation_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Please Enter the donation amount Here"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintBottom_toTopOf="@id/donate_button"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        />
+
+    <Spinner
+        android:id="@+id/currency_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/donation_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+         app:layout_constraintBottom_toTopOf="@id/donate_button"
+             />
+
+    <Button
+        android:id="@+id/donate_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Donate Now"
+        android:backgroundTint="@color/buttonColor"
+        app:layout_constraintBottom_toTopOf="@id/toListOfDonation"
+        app:layout_constraintTop_toBottomOf="@id/currency_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/toListOfDonation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="All Donations"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/buttonColor"
+        app:layout_constraintTop_toBottomOf="@id/donate_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
